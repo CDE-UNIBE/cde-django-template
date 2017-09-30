@@ -1,0 +1,19 @@
+{
+  "name": "{{ project_name }}",
+  "version": "1.0.0",
+  "dependencies": {
+    "foundation-sites": "",
+    "gulp": "",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "",
+    "gulp-concat": "",
+    "gulp-concat-multi": "",
+    "gulp-minify": "",
+    "gulp-rename": "",
+    "gulp-sass": "",
+    "gulp-svgmin": "",
+    "gulp-svgstore": "",
+    "jquery": "",
+    "jquery-ui-bundle": ""
+  }
+}

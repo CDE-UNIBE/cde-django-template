@@ -1,0 +1,40 @@
+[id^="icon"] path,
+[id*=" icon"] path {
+  fill: currentColor;
+}
+[class^="icon"],
+[class*=" icon"] {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  fill: currentColor;
+
+  &.is-inline {
+    float: left;
+    margin-right: 0.5em;
+    margin-top: 0.25em;
+    height: 0.9em;
+    width: 0.9em;
+
+    &.right {
+      float: right;
+      margin-right: 0;
+      margin-left: 0.5em;
+    }
+
+    &.is-alone {
+      float: none;
+      margin-right: 0;
+    }
+
+    &.is-button {
+      margin: 0.25em;
+    }
+  }
+  &.no-top-margin {
+    margin-top: 0;
+  }
+  &.no-pointer-events {
+    pointer-events: none;
+  }
+}

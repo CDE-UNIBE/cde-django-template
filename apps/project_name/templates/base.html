@@ -1,0 +1,33 @@
+{% load compress i18n sekizai_tags static %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {# TODO: Set title #}
+    <title></title>
+    {% compress css %}
+      <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    {% endcompress %}
+    {% render_block "css" %}
+  </head>
+  <body>
+    <div class="content row medium-10 large-7 columns">
+      {% include 'partials/messages.html' %}
+      {# TODO: Remove/replace content #}
+      {% block content %}
+        <p>This is the content block of the base template.</p>
+      {% endblock %}
+    </div>
+    {% compress js %}
+      <script src="{% static 'js/app-min.js' %}"></script>
+    {% endcompress %}
+    <script>
+      svg4everybody();
+      $(document).foundation();
+    </script>
+    {% render_block "js" %}
+  </body>
+</html>

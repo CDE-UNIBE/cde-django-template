@@ -1,0 +1,18 @@
+#################################################################
+# Requirements specific for the development environment
+#################################################################
+
+-r base.txt
+
+# Test helpers
+model_mommy
+pytest-django
+pytest-cov
+pytest-sugar
+PyVirtualDisplay
+selenium
+# lint, includes isort
+pylint
+pylint-django
+pycodestyle
+fabric3

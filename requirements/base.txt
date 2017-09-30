@@ -1,0 +1,12 @@
+#################################################################
+# Basic Requirements
+#################################################################
+
+Django
+dj-database-url
+django-appconf
+django-compressor
+django-configurations
+django-sekizai
+envdir
+psycopg2
