@@ -15,7 +15,7 @@ This template will set up a Django project with frontend libraries (Foundation, 
     
 * Create a new project using this template:
     ```
-    (env)$ django-admin startproject --template https://github.com/CDE-UNIBE/cde-django-template/archive/master.zip --extension py,md,ini,json <project_name>
+    (env)$ django-admin startproject --template https://github.com/CDE-UNIBE/cde-django-template/archive/master.zip --name package.json,Makefile --extension py,md,ini <project_name>
     ```
 
 * Go to project directory:
@@ -41,6 +41,8 @@ Backend
     ```
     (env)$ pip install -r requirements/development.txt
     ```
+    (or use `requirements/production.txt`)
+    
     You may want to freeze the requirements: `(env)$ pip freeze`
 
 * Update the environment variables in `envs` directory, namely:
@@ -68,6 +70,9 @@ Frontend
     ```
     (env)$ gulp
     ```
+
+Run
+===
 
 * Run server:
     ```
